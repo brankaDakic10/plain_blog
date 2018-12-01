@@ -24,7 +24,7 @@
 
 <div class="blog-post">
     <h2 class="blog-post-title">
-        <a href="#" class="blog-title-link">
+        <a href="single_post.php?post_id=<?php echo($post['id']) ?>" class="blog-title-link">
             <?php echo($post['title']) ?>
         </a>
     </h2>
