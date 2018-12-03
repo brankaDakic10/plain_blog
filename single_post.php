@@ -105,7 +105,11 @@
                         </h6>
                         <hr>
                     </div>
-
+               <!-- delete single comment-->
+               <button class='btn btn-default'>
+        <a href="delete-comment.php?comment_id=<?php echo($comment['id'])
+     ?>&post_id=<?php echo($comment['post_id']) ?>">Delete comment</a></button>
+       <hr>
 
                     <!--end of list-->
                     <?php } ?>
