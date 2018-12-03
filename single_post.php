@@ -66,6 +66,44 @@
                 </div>
                 <!--end post-->
 
+                <div class="blog-comments">
+
+                    <h5>Comments:</h5>
+                    <hr>
+                    <?php 
+                   
+                //get comment with foreign key
+                $com_id = $_GET['post_id'];
+                $sql = "SELECT * FROM comments WHERE comments.post_id = " . $com_id;
+
+                $com = $connection->prepare($sql);
+                $com->execute();
+                $com->setFetchMode(PDO::FETCH_ASSOC);
+                $comments = $com->fetchAll();
+
+                foreach ($comments as $comment) { ?>
+
+                    <!--list of comments from that post-->
+                    <div class='comments-list'>
+
+
+                        <p>Comment:
+                            <?php echo($comment['text']) ?>
+                        </p>
+
+                        <h6><i>Author by </i>
+                            <?php echo($comment['author']) ?>
+                        </h6>
+                        <hr>
+                    </div>
+
+
+                    <!--end of list-->
+                    <?php } ?>
+                </div>
+
+
+
             </div>
             <?php include 'partials/sidebar.php';?>
         </div><!-- /.row -->
