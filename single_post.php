@@ -66,10 +66,19 @@
                 </div>
                 <!--end post-->
 
+                
+                <!-- button  show hide comments -->
+               
+                <button id='myBtn' type="button" 
+                class="btn btn-default btn-comments">Hide comments</button>
+               
+           
                 <div class="blog-comments">
-
+                  <br>
+                  <br>
+                  <hr>
                     <h5>Comments:</h5>
-                    <hr>
+                    
                     <?php 
                    
                 //get comment with foreign key
@@ -110,7 +119,7 @@
 
     </main><!-- /.container -->
     <?php include 'partials/footer.php';?>
-
+    <script src="js/main.js" type="text/javascript" ></script>
 
 </body>
 
