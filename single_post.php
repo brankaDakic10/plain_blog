@@ -61,6 +61,11 @@
                     <p>
                         <?php echo($singlePost['body']) ?>
                     </p>
+                    <button class='btn btn-primary'>
+                        <a href="delete-post.php?post_id=<?php echo($singlePost['id']) ?>" 
+                        style='color:white' 
+ onclick="return confirm('Do you really want to delete this post?')">Delete post</a></button>
+
 
 
                 </div>

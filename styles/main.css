@@ -33,3 +33,84 @@ h6,
     text-decoration: underline;
 }
 
+
+
+/* create.php */
+.post-form{
+    width: 70%;
+    margin: 0 auto  ;
+    background-color: #f9f9f9;
+}
+
+input[type=text]:hover {
+    background-color: lightgoldenrodyellow;
+}
+input[type=email]:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+textarea:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(90, 7, 7);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(90, 7, 7);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+input[type=datetime-local]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(90, 7, 7);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    background-color: #5cb85c;
+    width: 25%;
+    float: right;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    margin-bottom: 6%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #285a2a;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px;
+    border: 1px solid rgb(90, 7, 7);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    resize: none;
+}
