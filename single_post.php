@@ -66,7 +66,7 @@
                 </div>
                 <!--end post-->
 
-                
+                <?php include 'comment-form.php';?>
                 <!-- button  show hide comments -->
                
                 <button id='myBtn' type="button" 
